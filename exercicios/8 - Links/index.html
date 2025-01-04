@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links e Âncoras</h1>
+    <h2>Links externos</h2>
+    <p>Os hyperlinks permitem que você conecte diferentes pontos na <em>World Wide Web</em>. Toda vez que você acessa um site ou clica em um local para outra página, outro site ou para baixar um arquivo, você está interagindo com um <em>hyperlink</em></p>
+    <h3>Criando um link</h3>
+    <p>Acesse a página do GE: <a href="https://ge.globo.com/"> clique aqui</a> </p>
+    <h4><strong>Parâmetro <em>target</em></strong> controla o comportamento do site após interação com hyperlink</h4>
+    <ul>
+        <li>_blank: abre o link em uma nova janela</li>
+        <li>_self: abre o link na própria aba</li>
+    </ul>
+    <p>Por exemplo, o perfil do GitHub abrirá em uma outra janela: <a href="https://gustavoguanabara.github.io" target="_blank"> Clique aqui para o perfil do GitHub</a></p>
+    <h2>Links internos</h2>
+    <p>Levam o visistante a outra página dentro do nosso próprio site.</p>
+    <p><a href="pag2.html">Acesse aqui a próxima página</a></p>
+    <h3>Podemos utilizar o atributo "rel" na tag <em>&lt;a&gt;</em> para indicar o que significa o link</h3>
+    <ul>
+        <li>next: link é para a próxima parte do documento atual</li>
+        <li>prev: link é para a parte anterior do documento atual</li>
+        <li>author: link é para o site do autor do documento atual</li>
+        <li>external: link é para um site que não faz parte do documento atual</li>
+        <li>nofollow: link é para site não endossado, como um link pago</li>
+    </ul>
+    <pre><code>
+        Continuar navengando no site: &lt;a href = "pagina2.html" target="_self" rel="next"&gt; &lt;/a&gt;
+        Abrir o GitHub em uma nova janela: &lt;a href="https://gustavoguanabara.github.io" target="_blank" rel="external"&gt;&lt;/a&gt;
+    </code></pre>
+    <h2>Links para downloads</h2>
+    <p>Link diretamente para o arquivo que se deseja efetuar o download com os seguintes atributos:</p>
+    <ul>
+        <li><em>download</em>: valor para o nome do arquivo a ser baixado</li>
+        <li><em>typpe</em>: indica ao navegador o tipo de arquivo a ser baixado.</li>
+    </ul>
+    <p><em>Media types</em> mais utilizados:</p>
+    <ul>
+        <li><em>application/zip</em></li>
+        <li><em>application/pdf</em></li>
+        <li><em>text/html</em></li>
+        <li><em>video/mp4</em></li>
+        <li><em>image/png</em></li>
+    </ul>
+    <ul>
+        <li><a href="Livro/Fundamentos+de+HTML+(1).pdf" download="meulivro.pdf" type="application/pdf" target="_blank">Baixar livro em PDF</a></li>
+        <li><a href="Livro/Fundamentos+de+HTML+(1).zip" download="meulivro.zip" type="application/zip">Livro compactado em zip</a></li>
+    </ul>
+</body>
+</html>

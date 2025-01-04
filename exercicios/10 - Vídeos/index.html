@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <h2>Este vídeo está hospedado no meu próprio servidor</h2>
+    <h3> <mark>ATENÇÃO!!!</mark></h3>
+    <h4>Vídeos hospedados dessa maneira consomem muito tráfico de dados e podem oferecer um custo muito elevado ao cliente</h4>
+    <p>É IMPORTANTE QUE COLOQUEMOS VÁRIAS FONTES DE VÍDEO DE DIFERENTES TIPOS DE ARQUIVO PARA QUE TODOS OS NAVEGADORES SEJAM COMPATÍVEIS</p>
+    <P>Software para conversão de vídeo: HandBreak</P>
+    <p>Assim como trabalhamos com áudios, o navegador testará a reprodução conforme a ordem definida dentro da tag: video </p>
+    <video height="300" poster="midia/html-200.png" controls loop >
+        <source src="midia/video1.mp4" type="video/mp4">
+        <!--Colocar as diferentes fontes de vídeo aqui-->
+    </video>
+    <h1>Inserindo vídeos de servidores de hospedagem de vídeos (YouTube, Vimeo e etc)</h1>
+    <p>O YouTube também gera o código HTML</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=Pt5GWGHt6CsLsV6T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
