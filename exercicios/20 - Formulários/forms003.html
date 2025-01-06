@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 003</title>
+</head>
+<body>
+    <h1>Teste de Forms 3 - ComboBox</h1>
+    <h2>Há dois tipos de ComboBox: &lt;select&gt; &lt;datalist&gt;</h2>
+    <ul>
+        <li>&lt;select&gt;: Permite apenas as opções listadas</li>
+        <li>&lt;datalist&gt;: Permite que o user forneça uma opção fora das opções sugeridas</li>
+    </ul>
+    <form>
+        <p><label for="iUF">Estado:</label>
+            <select name="Estados" id="iUF">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+            </datalist>
+        </p>
+        
+    </form>
+</body>
+</html>

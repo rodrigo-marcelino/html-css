@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    name: manipulação em PHP -> identificar o form quando os dados são enviados para o servidor
+    id: manipulação em JavaScript
+
+    Para onde os dados são enviados?
+    2 métodos de envio de formulários:
+    GET (método padrão): os dados fiam visíveis na URL
+    1. Usar quando os dados nao forem sensíveis -> ex: busca do google
+    2. Dados compartilhaveis
+    3. Dados limitados até 3KB (~3000 caracteres)
+    POST: não é visível na URL, mas não está protegido (criptografado). Ele é enviado de uma maneira diferente, porém pode ser acessado de outra forma
+    1. Dados sensíveis + Criptografia
+    2. Dados > 3KB
+
+    Não há diferença perceptível de performance entre os dois métodos
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
