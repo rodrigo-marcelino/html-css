@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /*O contêiner é o pai e recebe o display: flex
+        Os elementos internos (filhos) receberam características de itens*/
+        .container{
+            background-color: #023535;
+            border-radius: 8px;
+        
+            display: flex;
+            /*
+            01. flex-direction: row-reverse; Direção principal (main-axis) da flexbox
+
+            02. flex-wrap: wrap-reverse; wrap quebra linha no sentido do cross-axis / wrap-reverse quebra no sentido contrário do cross-axis
+            
+            Recomendação da w3c -> 
+            03. Propriedade flex-flow é a junção de -direction + _wrap
+            
+            04. justify-content: distribuição dos itens no main-axis 
+            
+            05. align-items (nowrap): distribuição no cross-axis (padrão - stretch (estica os itens))
+            aumente a altura do container para enteder a propriedade
+
+            OBS: PARA ALINHAR UM ELEMNTO EXATAMENTE NO MEIO
+            justify-content: center; & align-items: center;
+
+            06. align-content (wrap): distribui os elementos no cross-axis quando estão empacotados, ou seja, flex-wrap: wrap;
+            */
+            
+            flex-flow: row wrap;
+            justify-content: space-between;
+            /*height: 200px;
+            align-items: center;*/
+            align-content: space-evenly;
+
+
+        }
+        .item{
+            background-color: #0FC2C0;
+            border: 1px solid black;
+            margin: 8px;
+            border-radius: 8px;
+            padding: 8px;
+            text-align: center;
+
+            /*
+            01. order: todo item tem order 0
+                Caso você queira exibir os items em uma ordem específica, altere a ordem dos items e o css exibirá em ordem crescente
+                DICA: configure com o id. Exemplo:
+                #itemX{
+                    order: 4;
+                }
+            02. align-self: cada um dos items pode ter um alinhamento próprio no cross-axis: efeitos visuais
+            
+            03. felx-basis (nowrap): configuração da largura dos items. valor padrão(auto -> largura depende do conteúdo)
+
+            04a. flex-shrink: 0/1 (pode encolher?)
+            04b. flex-grow: 0/1 (pode crescer?)
+
+            05. flex: grow + shrink + basis
+                padrao: auto (1 1 auto)
+                valor initial: (0 1 auto)
+            */
+            
+            flex: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo prático A</div>
+        <div class="item">Exemplo prático B</div>
+        <div class="item">Exemplo prático C</div>
+        <div class="item">Exemplo prático D</div>
+    </div>
+</body>
+</html>
